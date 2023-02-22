@@ -28,13 +28,17 @@ Required APIs:
 
 ## Architecture
 ver 1.0.0<br>
-<a href="https://projects.invisionapp.com/freehand/document/waq0XAES3"> <img src="assets/wrrc2.png)" width="400" height="300"> </a>
+<a href="https://projects.invisionapp.com/freehand/document/waq0XAES3"> <img src="./assets/wrrc2.png" width="400" height="300"> </a>
 
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
 ## Change Log
 
-02-21-2023 1620 - Set up Server repo. Finish: 1629 Time: 9min 
+02-21-2023 Start: 1620 - Set up Server repo. Finish: 1629 Time: 9min 
+
+02-21-2023 Start: 1910 - Created API endpoint in server and filter search functionality. Finish: 2210, Time: 3 hours
+
+02-21-2023 Start: 2210 - Adds API calls to handle errors. Finish: 2213, Time: 3 min
 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
