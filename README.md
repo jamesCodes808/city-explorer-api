@@ -21,14 +21,20 @@ Required packages:
 - npm install dotenv
 
 Required APIs:
+- [Weatherbits](https://www.weatherbit.io/)
+- [TMDB](https://www.themoviedb.org/)
 <!-- <br>
 [LocationIQ](https://locationiq.com/)
 <br> -->
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
 ## Architecture
-ver 1.0.0<br>
-<a href="https://projects.invisionapp.com/freehand/document/waq0XAES3"> <img src="./assets/wrrc2.png" width="400" height="300"> </a>
+>ver 1.0.0<br>
+><a href="https://projects.invisionapp.com/freehand/document/waq0XAES3"> <img src="./assets/wrrc2.png" width="400" height="300"> </a>
+>
+>ver 1.0.1<br>
+><img src="./assets/wrrc3.png" width="400" height="300"> </a>
+
 
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
@@ -40,13 +46,20 @@ ver 1.0.0<br>
 
 02-21-2023 Start: 2210 - Adds API calls to handle errors. Finish: 2213, Time: 3 min
 
+02-22-2023 Start 1620 - Adds API calls to weatherbits and wires front end component to back end. Finish: 1750, Time: 1 hour 30 min
+
+02-22-2023 Start 1910 - Created new API endpoint in server to to make API calls to TMDB API and return object to front end
+
+02-22-2023 Start 2240 - Deployed this api to cloud server Finish: 2300, Time: 20 min
+
+
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
 ## Credit and Collaborations
 
->[]()
+>[Sheldon Pierce for Helping with the WRRC Diagram](https://github.com/Sheldon-Pierce)
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 
