@@ -22,11 +22,22 @@ function weatherHandler(request, response) {
         .then(summaries => response.send(summaries))
         .catch((error) => {
             console.log(error)
-            response.status(200).send('')
+            response.status(400).send(error)
         });
 };
 
-app.get('/movie', getMovies);
+app.get('/movie', movieHandler);
+
+function movieHandler(request, response) {
+    console.log(request)
+    const query = request.query;
+    getMovies(query)
+        .then(summaries => response.send(summaries))
+        .catch((error) => {
+            console.log(error)
+            response.status(400).send(error)
+        });
+};
 
 app.get('/search', (request, response) => {
     response.send('in progress')
