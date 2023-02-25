@@ -16,17 +16,27 @@ app.use(cors());
 app.get('/weather', weatherHandler);
 
 function weatherHandler(request, response) {
-    console.log(request)
+    console.log(request.query)
     const { cityName, lat, lon } = request.query;
     getWeather(cityName, lat, lon)
         .then(summaries => response.send(summaries))
         .catch((error) => {
             console.log(error)
-            response.status(200).send('')
+            response.status(400).send(error)
         });
 };
 
-app.get('/movie', getMovies);
+app.get('/movie', movieHandler);
+
+function movieHandler(request, response) {
+    const { query } = request.query;
+    getMovies(query)
+        .then(summaries => response.send(summaries))
+        .catch((error) => {
+            console.log(error)
+            response.status(400).send(error)
+        });
+};
 
 app.get('/search', (request, response) => {
     response.send('in progress')
