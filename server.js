@@ -16,7 +16,7 @@ app.use(cors());
 app.get('/weather', weatherHandler);
 
 function weatherHandler(request, response) {
-    console.log(request)
+    console.log(request.query)
     const { cityName, lat, lon } = request.query;
     getWeather(cityName, lat, lon)
         .then(summaries => response.send(summaries))
@@ -29,8 +29,7 @@ function weatherHandler(request, response) {
 app.get('/movie', movieHandler);
 
 function movieHandler(request, response) {
-    console.log(request)
-    const query = request.query;
+    const { query } = request.query;
     getMovies(query)
         .then(summaries => response.send(summaries))
         .catch((error) => {
