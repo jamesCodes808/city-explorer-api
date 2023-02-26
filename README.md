@@ -15,7 +15,7 @@
 
 Required packages:
 - npm install react-bootstrap bootstrap
-- npm install nodemon
+- npm install -g --force nodemon (sometimes the force is not needed)
 - npm install express
 - npm install cors
 - npm install dotenv
